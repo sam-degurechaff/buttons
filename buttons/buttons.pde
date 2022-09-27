@@ -21,7 +21,7 @@ void draw() {
   }
   rect(100, 100, 200, 100);
   fill(green);
-  if( touchingCircle(400, 150, 100)) {
+  if ( touchingCircle(400, 150, 100)) {
     fill(white);
   } else {
     fill(green);
@@ -37,11 +37,15 @@ void mousePressed() {
     ;
   }
 }
-boolean touchingRect(int x, int y, int w, int h) {
-  if (mouseX>x&&mouseX<x+w&&mouseY>y&&mouseY<y+h) {
-    return true;
-  } else {
-    return false;
+
+void rect(int x, int y, int w, int h, color f) {
+  boolean touchingRect(int x, int y, int w, int h) {
+    if(mouse
+    if (mouseX>x&&mouseX<x+w&&mouseY>y&&mouseY<y+h) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
